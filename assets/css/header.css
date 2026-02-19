@@ -3,66 +3,59 @@
     padding:0;
     box-sizing:border-box;
 }
-
 .header{
-    display:flex;
-    /* gap:232.5px; */
-    justify-content:space-between;
     padding: 21.84px 0;
-    margin: 0 165px;
 }
-
+.container{
+    width:calc( 100% - 332.88px);
+    margin:0 auto;
+}
+.row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
 .list ul{
     display:flex;
     gap:60px;
     list-style-type:none;
 }
-
+a{
+    text-decoration:none;
+    color:#3A3845;
+    font-size:14px;
+    font-family: 'Inter', sans-serif;
+}
 .icons ul{
     display:flex;
     gap:24px;
     list-style-type:none;
 }
-
 .colleation_section{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
     gap: 30px;
-    padding-top: 40px;
+    padding-top:40px;
     padding-bottom: 40px;
-    /* margin: 0 165px; */
 }
-
 .colleation{
     width:calc( (100% - 90px) / 4);
+    text-align:center;
 }
-
 img{
     width:100%;
 }
-
 h2{
-    margin-top:23px;
+   margin-top:23px;
+   border-bottom: 2px solid black;
 }
-
 .items{
-    background-color: teal;
     display:flex;
     height:500px;
     align-items:flex-start;
 }
-
 .item{
-    background-color: bisque;
     width:200px;
 }
-
 .demo{
-    background-color:blue;
     height:200px;
-}
-
-h2{
-    background-color: red;
 }
