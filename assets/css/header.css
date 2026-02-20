@@ -46,7 +46,7 @@ img{
 }
 h2{
    margin-top:23px;
-   border-bottom: 2px solid black;
+   /* border-bottom: 2px solid black; */
 }
 .items{
     display:flex;
@@ -57,5 +57,12 @@ h2{
     width:200px;
 }
 .demo{
+    background-color:teal;
+    width:1500px;
     height:200px;
+    text-align:center;
+    -webkit-display: flex;/*if browser doesn't support it then we use webkit*/
+    justify-content: center;
+    align-items: center;
+
 }
