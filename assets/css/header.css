@@ -6,6 +6,22 @@
 .header{
     padding: 21.84px 0;
 }
+
+p{
+    color: purple !important;
+    font-size: 24px;
+}
+
+.hero p{
+    color: yellow;
+    background-color: blue;
+}
+
+.hero .demo{
+    color: green;
+    font-weight: bold;
+}
+
 .container{
     width:calc( 100% - 332.88px);
     margin:0 auto;
@@ -32,6 +48,29 @@ a{
     gap:24px;
     list-style-type:none;
 }
+
+.hero{
+    background-color:#8999d5;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:14px;
+}
+
+@media screen and (min-width:0) and (max-width:996px){
+    .list{
+
+        display:none;
+    }
+    .icons{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+}
+
 .colleation_section{
     gap: 30px;
     padding-top:40px;
@@ -41,28 +80,31 @@ a{
     width:calc( (100% - 90px) / 4);
     text-align:center;
 }
+
+@media screen and (min-width:0) and (max-width:700px){
+    .row .colleation_section{
+        flex-direction: column;
+    }
+    .colleation{
+    width: 100%;
+    }
+}
+
+@media screen and (min-width:771px) and (max-width:900px){
+    .colleation{
+    width:calc( (100% - 60px) / 3);
+    }
+}
+
+@media screen and (min-width:771px) and (max-width:900px){
+    .colleation{
+    width:calc( (100% - 30px) / 2);
+    }
+}
 img{
     width:100%;
 }
 h2{
    margin-top:23px;
    /* border-bottom: 2px solid black; */
-}
-.items{
-    display:flex;
-    height:500px;
-    align-items:flex-start;
-}
-.item{
-    width:200px;
-}
-.demo{
-    background-color:teal;
-    width:1500px;
-    height:200px;
-    text-align:center;
-    -webkit-display: flex;/*if browser doesn't support it then we use webkit*/
-    justify-content: center;
-    align-items: center;
-
 }
