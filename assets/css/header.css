@@ -53,10 +53,19 @@ body{
     font-family: var(----primaryFont);
 }
 
+.header a:hover{
+    color: #FFC700;
+}
+
 .icons ul{
     display:flex;
     gap:calc( var(--space) * 6);
     list-style-type:none;
+    gap: 25.5px;
+}
+
+.icons a{
+    cursor: pointer;
 }
 
 .hero{
@@ -218,6 +227,14 @@ img{
     font-weight: 600;
     color: #3A3845;
     white-space: nowrap;
+}
+
+.best_sellers .add-to-cart:hover{
+    background-color: #a66317a1;
+}
+
+.item:hover .add-to-cart{
+    background-color: red;
 }
 
 @media screen and (min-width:0px) and (max-width:400px){
