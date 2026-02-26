@@ -81,15 +81,11 @@ body{
 }
 
 .hero{
-    /* background-image: url("../image/background/background.jpg");*/
-    background-color: yellow;
     background-image: url("../image/hero/hero.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    /* background-position:0px -100px; */
-    /* height:600px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,7 +220,10 @@ p{
     text-align: left;
     /* width: calc((100% - (3 * 30px)) / 4); */
     width: 250px;
-    flex-grow: 1;
+    flex-grow: 1; 
+    flex-shrink: 0;
+    box-shadow: 0px 0px 7px 9px rgb(212, 210, 210);
+    padding: 10px;
 }
 
 .best_sellers h2{
@@ -246,6 +245,7 @@ p{
     /* letter-spacing: 3px; */
     text-transform: uppercase;
     font-family: "Inter";
+    text-shadow: 10px 1px 17px rgb(115, 111, 111);
 }
 
 .best_sellers .price{
@@ -337,4 +337,12 @@ p{
 }
 
 .history .history_one{
+}
+
+.box_shadow img{
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.4);
+}
+
+.drop_shadow img{
+    filter:drop-shadow( 10px 10px 10px rgb(0,0,0,0.4) );
 }
