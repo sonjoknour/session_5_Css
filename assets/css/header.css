@@ -81,8 +81,15 @@ body{
 }
 
 .hero{
-    background-color:#8999d5;
-    height:400px;
+    /* background-image: url("../image/background/background.jpg");*/
+    background-color: yellow;
+    background-image: url("../image/hero/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    /* background-position:0px -100px; */
+    /* height:600px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,3 +331,10 @@ p{
     order: 0;
 } 
 
+.history .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.history .history_one{
+}
