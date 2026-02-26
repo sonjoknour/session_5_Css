@@ -23,8 +23,19 @@ body{
     --spcae: 4px; 
 }
 
+.setting{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    background-color: #a49a9a;
+    padding: 10px; 
+}
+
 .header{
     padding: 21.84px 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
 }
 
 .container{
@@ -133,10 +144,6 @@ p{
     gap: 30px;
 }
 
-.colleation_section .row{
-    gap: 30px;
-}
-
 .colleation_section h2{
    margin-top:23px;
     color:var(--primaryColor);
@@ -165,9 +172,16 @@ p{
     }
 } */
 
-img{
+.colleation_section img{
     width:100%;
+    filter: grayscale(0.9);
+    transition: filter 0.7s;
 }
+
+.colleation_section img:hover{
+    filter: grayscale(0);
+}
+
 
 .flow{
     font-size: 14px;
@@ -187,6 +201,10 @@ img{
     background-color: #dcdcdc94;
     text-align: center;
     padding: 80px 0;
+}
+
+.best_sellers img{
+    width:100%;
 }
 
 .best_sellers .row{
